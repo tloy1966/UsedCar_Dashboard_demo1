@@ -1,0 +1,42 @@
+{
+  "defaults": {
+    "pages": 2
+  },
+  "filters": {
+    "make_year_range": "2015_2025",
+    "price_range": "500000_2000000",
+    "comment": "makeYear format: YYYY_YYYY, price format: min_max in NT$ (500000 = 50萬)"
+  },
+  "tasks": [
+    {
+      "brand": "toyota",
+      "kind": "rav4",
+      "enabled": false,
+      "pages": 2
+    },
+    {
+      "brand": "honda",
+      "kind": "crv",
+      "enabled": false,
+      "pages": 2
+    },
+    {
+      "brand": "mazda",
+      "kind": "cx-5",
+      "enabled": false,
+      "pages": 2
+    },
+    {
+      "comment": "General search without specific brand/kind - uses filters only",
+      "enabled": true,
+      "pages": 1
+    },
+    {
+      "brand": "toyota",
+      "comment": "All Toyota vehicles (no specific kind)",
+      "enabled": false,
+      "pages": 3
+    }
+  ],
+  "notes": "Set enabled=true for the pairs you want to fetch. You can also override 'pages' per task. Brand and kind are now optional - omit them for general searches that rely on API filters. Configure filters section to set year range and price range."
+}
